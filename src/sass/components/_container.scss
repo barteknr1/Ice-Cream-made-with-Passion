@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding-inline: 20px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
