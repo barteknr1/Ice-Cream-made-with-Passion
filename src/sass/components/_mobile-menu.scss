@@ -37,6 +37,13 @@
 
 .mobile-menu__btn {
   width: 209px;
+  position: relative;
   margin-bottom: 19px;
   transition: background-color 250ms;
+}
+
+.mobile-menu__icon {
+  position: absolute;
+  top: 18px;
+  right: 46px;
 }

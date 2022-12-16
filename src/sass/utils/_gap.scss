@@ -1,21 +1,28 @@
-.wrapper {
+// GAP UŻYWAMY NA TAG UL
+
+.gap {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    gap: 20px;
   }
   @media screen and (min-width: 1280px) {
-    gap: 29px;
+    gap: 30px;
   }
+
+  // ABOUT UŻYWAMY DO SEKCJI POD HOW IT'S MADE
+
   &--about {
     justify-content: flex-start;
-    gap: 38px;
+    gap: 40px;
     @media (min-width: 768px) and (max-width: 1279px) {
       gap: 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 30px;
     }
   }
 }
