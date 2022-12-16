@@ -13,7 +13,9 @@
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
-      ></button>
+      >
+        <svg width="20" height="12"><use xlink:href="./images/icons.svg#icon-burger"></use></svg>
+      </button>
     </div>
     <div class="slogan">
       <h1 class="slogan__title">
@@ -21,8 +23,14 @@
       </h1>
     </div>
     <div class="buttons-header">
-      <button type="button"><a href="#" class="">Products</a></button>
-      <button type="button"><a href="#" class="">How it&#8217;s made?</a></button>
+      <button class="buttons-header__btn" type="button">
+        <a class="buttons-header__link" href="#" class="">Products</a>
+      </button>
+      <button class="buttons-header__btn buttons-header__btn--color-change" type="button">
+        <a class="buttons-header__link buttons-header__link--color-change" href="#"
+          >How it&#8217;s made?</a
+        >
+      </button>
     </div>
     <div class="header-img">
       <div class="header-img__ice-cream"></div>

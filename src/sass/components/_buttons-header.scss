@@ -2,3 +2,37 @@
   display: inline-flex;
   gap: 8px;
 }
+
+.buttons-header__btn {
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-header);
+  padding-inline: 14px;
+  transition: background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  &--color-change {
+    background-color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+
+.buttons-header__link {
+  display: block;
+  color: var(--color-white);
+  font-size: 8px;
+  line-height: 1.25;
+
+  &--color-change {
+    color: var(--color-header);
+  }
+}
