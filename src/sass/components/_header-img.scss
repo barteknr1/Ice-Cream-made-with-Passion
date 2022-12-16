@@ -1,0 +1,38 @@
+.header-img {
+  position: static;
+}
+
+.header-img__ice-cream {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  top: 92px;
+  right: 30px;
+  z-index: -1;
+  background-image: url('../images/mobile-imgs/ice-cream-header-171.png');
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: url('../images/mobile-imgs/ice-cream-header-342.png');
+    background-size: 171px 410px;
+  }
+}
+
+.header-img__circle {
+  width: 284px;
+  height: 344px;
+  position: absolute;
+  top: 83px;
+  right: 0;
+  z-index: -2;
+  background-image: url('../images/mobile-imgs/circle-header-284.png');
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: url('../images/mobile-imgs/circle-header-568.png');
+    background-size: 284px 344px;
+  }
+}

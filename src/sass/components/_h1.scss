@@ -1,0 +1,20 @@
+.h1 {
+  color: var(--color-white);
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &--different {
+    color: var(--color-header);
+    font-size: 48px;
+    line-height: 1.04;
+  }
+}
+
+.h1-box {
+  width: 225px;
+  margin-bottom: 19px;
+}
