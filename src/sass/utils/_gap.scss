@@ -30,4 +30,10 @@
       gap: 90px;
     }
   }
+
+  &--products {
+    @media screen and (min-width: 1280px) {
+      gap: 24px;
+    }
+  }
 }
