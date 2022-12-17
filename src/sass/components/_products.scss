@@ -1,5 +1,4 @@
-// I've added this class to get correct top margin for this section, but I'm not sure if it should be here.
-.margin-top {
+.products {
   margin-top: 121px;
 }
 
@@ -9,7 +8,6 @@
 }
 
 .products__top-line {
-  // @TODO change this to variable once it is in the variables sass file
   font-family: Titan One;
   color: var(--color-header-label);
   font-size: var(--font-header-label-mobile);
