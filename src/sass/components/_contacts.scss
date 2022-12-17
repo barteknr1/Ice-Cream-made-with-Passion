@@ -9,7 +9,8 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 43px 20px;
-    padding-bottom: 0;
+    // padding już jest odpowiedni
+    padding-bottom: 25px;
     width: 80%;
     margin: 0 auto;
     font-weight: 500;
@@ -27,16 +28,14 @@
       background-color: #c2e297;
     }
   }
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
+
   &__item {
     padding: 25px 0;
     &:not(:last-child) {
       border-bottom: 1px solid #e1e1e1;
     }
     &:last-child {
+      // bez flexa nie działa
       display: flex;
       flex-direction: column;
     }
@@ -47,11 +46,9 @@
   }
   &__time {
     color: #ffa5ba;
-    margin-top: 0;
     margin-bottom: 16px;
   }
   &__link {
-    text-decoration: none;
     color: #907e82;
   }
   &__title {
