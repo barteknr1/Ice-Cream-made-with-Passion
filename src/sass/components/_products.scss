@@ -1,18 +1,21 @@
-.products__titles {
-  // justify-content: center;
-  // align-items: center;
+// I've added this class to get correct top margin for this section
+.margin-top {
   margin-top: 121px;
+}
+
+.products__titles {
+  text-align: center;
   margin-bottom: 31px;
 }
 
 .products__top-line {
+  // @TODO change this to variable once it is in the variables sass file
   font-family: Titan One;
   color: var(--color-header-label);
   font-size: var(--font-header-label-mobile);
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0em;
-  text-align: center;
 }
 
 .products__header {
@@ -22,7 +25,6 @@
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  text-align: center;
   margin-top: 15px;
 }
 
@@ -48,12 +50,36 @@
   background: transparent;
   margin: 0;
   margin-bottom: 17px;
+  margin-top: 55px;
+}
+
+.products__dots {
+  width: 24px;
+  height: 6px;
+}
+
+.products__arrow-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  fill: var(--color-header);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 41px;
+  cursor: pointer;
+}
+
+.products-img-position {
+  position: absolute;
+  top: -55px;
+  right: 15px;
+  left: 15px;
 }
 
 .card-background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-ice-cream);
   width: 280px;
   height: 485px;
@@ -91,8 +117,4 @@
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--color-white);
-}
-
-svg {
-  margin-left: 127px;
 }

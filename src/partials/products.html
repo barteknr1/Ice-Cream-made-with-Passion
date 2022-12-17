@@ -1,28 +1,78 @@
-<section class="container">
-    <div class="products__titles">
-      <a class="products__top-line" id="100%_natural">100% NATURAL</a>
-      <h1 class="products__header">PRODUCTS</h1>
-    </div>
-    <ul class="products-wrapper">
-      <li class="products__card">
-        <div class="products__image"></div>
-        <div class="card-background">
-          <h3 class="card-title">ICE CREAM</h3>
-          <svg width="24" height="6">
-            <use href="./images/icons.svg#icon-dots"></use>
-          </svg>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et. dolore magna aliqua facilisis.
-          </p>
-        </div>
-      </li>
-      <li class="products__card">
-        <div class="card-background card-background__ice-coffee"></div>
-      </li>
-  
-      <li class="products__card">
-        <div class="card-background card-background__milkshakes"></div>
-      </li>
-    </ul>
-  </section>
+<section class="container margin-top">
+  <div class="products__titles">
+    <a class="products__top-line" id="100%_natural">100% NATURAL</a>
+    <h2 class="products__header">PRODUCTS</h2>
+  </div>
+  <ul class="products-wrapper">
+    <li class="products__card">
+      <figure class="products-img-position">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="../src/images/desktop/products-ice-cream-335.png 1px"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../src/images/tablet/products-ice-cream-220.png 1px"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 480px)"
+            srcset="../src/images/mobile/products-ice-cream-249.png 1px"
+            type="image/png"
+          />
+          <img src="../src/images/mobile/products-ice-cream-249.png" alt="pink ice cream" />
+        </picture>
+      </figure>
+      <div class="products__image"></div>
+      <div class="card-background">
+        <h3 class="card-title">ICE CREAM</h3>
+        <svg class="products__dots">
+          <use href="./images/icons.svg#icon-dots"></use>
+        </svg>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <svg class="products__arrow-right">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </li>
+
+    <li class="products__card">
+      <div class="products__image"></div>
+      <div class="card-background card-background__ice-coffee">
+        <h3 class="card-title">ICE COFFEE</h3>
+        <svg class="products__dots">
+          <use href="./images/icons.svg#icon-dots"></use>
+        </svg>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <svg class="products__arrow-right">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </li>
+
+    <li class="products__card">
+      <div class="products__image"></div>
+      <div class="card-background card-background__milkshakes">
+        <h3 class="card-title">MILKSHAKES</h3>
+        <svg class="products__dots">
+          <use href="./images/icons.svg#icon-dots"></use>
+        </svg>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <svg class="products__arrow-right">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </li>
+  </ul>
+</section>
