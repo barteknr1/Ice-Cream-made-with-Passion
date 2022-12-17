@@ -72,7 +72,9 @@
     margin-left: 8px;
     width: 8px;
     height: 8px;
-    --color6: white;
+    &--color {
+      --color6: white;
+    }
   }
 }
 @media screen and (min-width: 480px) {
@@ -99,6 +101,9 @@
     gap: 15px;
     padding-top: 80px;
     justify-content: center;
+    &__item {
+      width: 190px;
+    }
   }
 }
 
@@ -107,6 +112,12 @@
     gap: 30px;
     &__card {
       width: 330px;
+    }
+  }
+
+  .contacts-buttons {
+    &__item {
+      width: 200px;
     }
   }
 }
