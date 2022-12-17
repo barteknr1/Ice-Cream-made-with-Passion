@@ -1,4 +1,33 @@
 .buttons-header {
-  display: inline-flex;
+  display: flex;
   gap: 8px;
+}
+
+.buttons-header__btn {
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+  color: var(--color-white);
+  font-size: 8px;
+  line-height: 1.25;
+  background-color: var(--color-header);
+  padding-inline: 14px;
+  padding-block: 7px;
+  cursor: pointer;
+  transition: background-color 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  &--color-change {
+    color: var(--color-header);
+    background-color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
 }
