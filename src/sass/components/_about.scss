@@ -1,0 +1,100 @@
+.about{
+    background-color: rgba(255, 245, 246, 1);
+    padding-left: 50px;
+    padding-right: 50px;
+ 
+    
+
+
+    &__tittle{
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+         font-size: 18px;
+         text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        padding-top: 125px;
+      
+        
+
+    }
+
+    &__section-tittle{
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+         text-align: center;
+         letter-spacing: 0.04em;
+         text-transform: uppercase;
+         color: #D41443;
+        padding-top: 15px;
+      
+    }
+
+         .about__position {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             gap: 47px;
+             flex-wrap: nowrap;
+             padding-top: 26px;
+         }
+
+    
+
+
+       
+    
+
+    &__text1{
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--font-12px);
+        line-height: 162%;
+        color:var(--color-black);
+        display: inline-block;
+        
+    }
+
+    &__text2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-12px);
+    line-height: 162%;
+    color: #907E82;
+    display: inline-block;
+    }
+
+        &__backgroud{
+            
+            height: 133px;
+            width: 100vw;
+            background-image: url('../images/mobile/about_tło_mobile_x1_320.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 5;
+            left: 0;    
+                     
+         } 
+         
+         @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+                screen and (min-resolution: 192dpi) and (min-width: 320px),
+                screen and (min-resolution: 2dppx) and (min-width: 320px) {
+                    background-image: url('../images/mobile/about_tło_mobile_x2_640.png');
+                    background-size: 320px 133px;
+                    background-repeat: no-repeat;
+
+                }
+
+              
+
+                &__svg{
+                 width: 4.43px;
+                height: 8px;
+                 }
+            }
