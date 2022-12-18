@@ -79,6 +79,7 @@
             position: absolute;
             z-index: 5;
             left: 0;    
+            /*top: 3417px;*/
                      
          } 
          
@@ -96,5 +97,10 @@
                 &__svg{
                  width: 4.43px;
                 height: 8px;
-                 }
+                
+                                 }
             }
+.button_position{
+    display: flex;
+        justify-content: space-between;
+}
