@@ -7,6 +7,10 @@
   padding-block: 12px;
   padding-left: 21px;
 
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+
   &:last-child {
     border-bottom: 1px solid #e18298;
   }

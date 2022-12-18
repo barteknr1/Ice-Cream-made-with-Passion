@@ -1,0 +1,40 @@
+.objects-numbers {
+  padding-right: 9px;
+  margin-top: 12px;
+}
+
+.objects-numbers__item {
+  text-align: right;
+
+  &:first-child {
+    margin-bottom: 13px;
+  }
+}
+
+.objects-numbers__value {
+  color: var(--color-header);
+  font-family: 'Titan One', cursive;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+.objects-numbers__name {
+  color: var(--color-white);
+  font-size: 8px;
+  line-height: 1.25;
+  padding-right: 1px;
+}

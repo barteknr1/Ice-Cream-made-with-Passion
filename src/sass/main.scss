@@ -8,6 +8,9 @@
 @import './utils/reset';
 @import './utils/variables';
 @import './utils/gap';
+@import './utils/d-none';
+@import './utils/backdrop';
+@import './utils/is-hidden';
 
 @import './components/body';
 @import './components/section';
@@ -19,3 +22,5 @@
 @import './components/mobile-menu';
 @import './components/mobile-nav';
 @import './components/button';
+@import './components/objects-numbers';
+@import './components/header-description';
