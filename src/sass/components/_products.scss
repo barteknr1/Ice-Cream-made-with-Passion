@@ -1,7 +1,7 @@
 // =====> classes .products are used above ul <===== //
-.products-block {
-  margin-top: 121px;
-}
+// .products-block {
+//   margin-top: 121px;
+// }
 
 .products__titles {
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .products__top-line {
-  font-family: Titan One;
+  font-family: Titan One, sans-serif;
   color: var(--color-header-label);
   font-size: var(--font-header-label-mobile);
   font-weight: 400;
@@ -18,7 +18,7 @@
 }
 
 .products__header {
-  font-family: Titan One;
+  font-family: Titan One, sans-serif;
   color: var(--color-header);
   font-size: var(--font-header-mobile);
   font-weight: 400;
@@ -26,7 +26,6 @@
   letter-spacing: 0.04em;
   margin-top: 15px;
 }
-
 
 // =====> classes .product are used in li <===== //
 .product {
@@ -44,7 +43,6 @@
     content: '';
     position: absolute;
     top: -120px;
-    right: 15px;
     left: 15px;
     width: 249px;
     height: 252px;
@@ -57,14 +55,13 @@
       right: 0;
       left: 0;
       width: 220px;
-      height: 226px;
+      height: 233px;
     }
   }
 
   @media screen and (min-width: 1280px) {
     &::after {
       top: -210px;
-
       width: 335px;
       height: 335px;
     }
@@ -193,10 +190,8 @@
   flex-direction: column;
   background-color: var(--color-ice-cream);
   width: 280px;
-
   border-radius: 24px;
   align-items: center;
-  justify-content: center;
 
   &--ice-coffee {
     background-color: var(--color-ice-coffee);
@@ -208,7 +203,7 @@
 }
 
 .product__name {
-  font-family: Titan One;
+  font-family: Titan One, sans-serif;
   color: var(--color-white);
   font-size: 20px;
   font-weight: 400;
@@ -226,7 +221,6 @@
 
 .product__description {
   padding: 30px 39px;
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
@@ -241,8 +235,6 @@
   border-radius: 50%;
   background-color: var(--color-white);
   fill: var(--color-header);
-  justify-content: center;
-  align-items: center;
   margin-bottom: 41px;
   cursor: pointer;
 }
