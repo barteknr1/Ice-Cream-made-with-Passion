@@ -76,13 +76,11 @@
 }
 .footer-right {
   &__address {
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.83;
     text-align: right;
-    padding-block: 43px;
     /*width: 230px;*/
 
     @media screen and (min-width: 768px) {
