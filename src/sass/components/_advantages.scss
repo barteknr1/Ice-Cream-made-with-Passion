@@ -1,4 +1,4 @@
-.section__advantages {
+.advantages {
   background-color: var(--color-secondary-background);
   padding-top: 40px;
   padding-bottom: 100px;
@@ -13,14 +13,14 @@
   }
 }
 
-.header__advantages {
+.advantages__header {
   display: none;
 }
 
 .advantages__heading {
   font-family: 'Titan One';
-  font-size: 36px;
-  line-height: 41px;
+  font-size: var(--font-header-mobile);
+  line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-header);
