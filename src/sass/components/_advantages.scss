@@ -1,0 +1,96 @@
+.advantages {
+  background-color: var(--color-secondary-background);
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 140px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+  }
+}
+
+.advantages__header {
+  display: none;
+}
+
+.advantages__heading {
+  font-family: 'Titan One';
+  font-size: var(--font-header-mobile);
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-header);
+  &::before {
+    margin-bottom: 16px;
+    display: block;
+    background-repeat: no-repeat;
+    height: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+  }
+  &--first {
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
+  }
+  &--first::before {
+    content: '';
+    background-image: url(/images/advantages-721-33.png);
+    width: 33px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/advantages-721-66.png);
+      background-size: 33px 50px;
+    }
+  }
+  &--second::before {
+    content: '';
+    background-image: url(/images/advantages-16kg-50.png);
+    width: 50px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/advantages-16kg-100.png);
+      background-size: 50px 50px;
+    }
+  }
+  &--last::before {
+    content: '';
+    background-image: url(/images/advantages-84-44.png);
+    width: 44px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/advantages-84-88.png);
+      background-size: 44px 50px;
+    }
+  }
+}
+
+.advantages__box {
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 270px;
+  }
+}
+
+.advantages__text {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+}
