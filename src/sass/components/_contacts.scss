@@ -1,5 +1,9 @@
-.contacts {
+.background-contacts {
   background-image: linear-gradient(to top, #fff5f6 95%, #ffffff 95%);
+  width: 100%;
+}
+
+.contacts {
   display: flex;
   flex-direction: column;
   gap: 20px;
