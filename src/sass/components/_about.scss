@@ -1,7 +1,6 @@
 .about{
     background-color: rgba(255, 245, 246, 1);
-    padding-left: 50px;
-    padding-right: 50px;
+   
  
     
 
@@ -22,12 +21,14 @@
         font-family: 'Titan One';
         font-size: 34px;
         line-height: 1.14;
-         text-align: center;
          letter-spacing: 0.04em;
          text-transform: uppercase;
          color: #D41443;
-        padding-top: 15px;
+        margin-top: 15px;
+      display: inline-block;
+            text-align: center;
       
+     
     }
 
          &__position {
@@ -41,7 +42,6 @@
 
     
 
-
        
     
 
@@ -50,6 +50,8 @@
         font-size: var(--font-12px);
         line-height: 162%;
         color:var(--color-black);
+        margin-left: 30px;
+        margin-right: 30px;
         
         
     }
@@ -68,6 +70,8 @@
             position: absolute;
             z-index: 5;
             left: 0;    
+            
+            background-size: cover;
             /*top: 3417px;*/
                      
          } 
