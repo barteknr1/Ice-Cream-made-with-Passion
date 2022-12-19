@@ -4,7 +4,7 @@
   padding-bottom: 100px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    padding-top: 65px;
     padding-bottom: 140px;
   }
 
@@ -18,12 +18,21 @@
 }
 
 .advantages__heading {
-  font-family: 'Titan One';
+  font-family: var(--font-header);
   font-size: var(--font-header-mobile);
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-header);
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-header-tablet);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-desktop);
+  }
+
   &::before {
     margin-bottom: 16px;
     display: block;
@@ -91,6 +100,16 @@
 .advantages__text {
   margin-top: 16px;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 170%;
+  font-size: var(--font-12px);
+  line-height: 1.7;
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-14px);
+    line-height: 1.74;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-16px);
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
 }
