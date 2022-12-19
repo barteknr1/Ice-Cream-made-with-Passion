@@ -1,0 +1,128 @@
+.background-contacts {
+  background-image: linear-gradient(to top, #fff5f6 95%, #ffffff 95%);
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__card {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 43px 20px;
+    // padding już jest odpowiedni
+    padding-bottom: 25px;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  &__label {
+    color: #ffffff;
+    background: #f0d1a5;
+    border-radius: 4px;
+    border: none;
+    padding: 0 25px;
+    letter-spacing: 0.04em;
+    &--color {
+      background-color: #c2e297;
+    }
+  }
+
+  &__item {
+    padding: 25px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e1e1e1;
+    }
+    &:last-child {
+      // bez flexa nie działa
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__discription {
+    color: #907e82;
+    line-height: 18px;
+  }
+  &__time {
+    color: #ffa5ba;
+    &--first {
+      margin-bottom: 16px;
+    }
+  }
+  &__link {
+    color: #907e82;
+  }
+  &__title {
+    display: none;
+  }
+}
+.contacts-buttons {
+  background-color: #fff5f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  &__item {
+    width: 160px;
+  }
+  &__svg {
+    margin-left: 8px;
+    width: 8px;
+    height: 8px;
+    &--color {
+      --color6: white;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .contacts {
+    &__card {
+      width: 384px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background-contacts {
+    background-image: linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+  }
+  .contacts {
+    //
+    flex-direction: row;
+    justify-content: center;
+
+    &__card {
+      width: 220px;
+      margin: 0;
+    }
+  }
+  .contacts-buttons {
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 80px;
+    justify-content: center;
+    &__item {
+      width: 190px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    gap: 30px;
+    &__card {
+      width: 330px;
+    }
+  }
+
+  .contacts-buttons {
+    &__item {
+      width: 200px;
+    }
+  }
+}
