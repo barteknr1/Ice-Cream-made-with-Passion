@@ -50,7 +50,9 @@
   }
   &__time {
     color: #ffa5ba;
-    margin-bottom: 16px;
+    &--first {
+      margin-bottom: 16px;
+    }
   }
   &__link {
     color: #907e82;
@@ -65,7 +67,6 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-top: 55px;
   &__item {
     width: 160px;
   }
@@ -87,8 +88,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contacts {
+  .background-contacts {
     background-image: linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+  }
+  .contacts {
+    //
     flex-direction: row;
     justify-content: center;
 
