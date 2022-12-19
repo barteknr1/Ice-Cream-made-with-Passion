@@ -1,6 +1,10 @@
 .buttons-header {
   display: flex;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
 }
 
 .buttons-header__btn {
