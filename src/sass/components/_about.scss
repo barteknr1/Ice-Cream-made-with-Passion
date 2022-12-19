@@ -6,26 +6,22 @@
     
 
 
-    &__tittle{
+    &__label{
         font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-         font-size: 18px;
+        font-size: var(--font-header-label-mobile);
          text-align: center;
         text-transform: uppercase;
-        color: #FFA5BA;
+        color:var(--color-header-label);
         padding-top: 125px;
       
         
 
     }
 
-    &__section-tittle{
+    &__tittle{
         font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
         font-size: 34px;
-        line-height: 39px;
+        line-height: 1.14;
          text-align: center;
          letter-spacing: 0.04em;
          text-transform: uppercase;
@@ -49,32 +45,25 @@
        
     
 
-    &__text1{
-        
-        font-style: normal;
+    &__text{
         font-weight: 500;
         font-size: var(--font-12px);
         line-height: 162%;
         color:var(--color-black);
-        display: inline-block;
+        
         
     }
 
-    &__text2{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--font-12px);
-    line-height: 162%;
-    color: #907E82;
-    display: inline-block;
+    &__text--part2{
+      color: #907E82;
+  
     }
 
         &__backgroud{
             
             height: 133px;
             width: 100vw;
-            background-image: url('../images/mobile/about_tło_mobile_x1_320.png');
+            background-image: url('../images/mobile/about_background_x1_320.png');
             background-repeat: no-repeat;
             position: absolute;
             z-index: 5;
@@ -86,7 +75,7 @@
          @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
                 screen and (min-resolution: 192dpi) and (min-width: 320px),
                 screen and (min-resolution: 2dppx) and (min-width: 320px) {
-                    background-image: url('../images/mobile/about_tło_mobile_x2_640.png');
+                    background-image: url('../images/mobile/about_background_x2_640.png');
                     background-size: 320px 133px;
                     background-repeat: no-repeat;
 
@@ -100,10 +89,7 @@
                 
                                  }
             }
-.button_position{
-    display: flex;
-        justify-content: space-between;
-}
+
 
         @media screen and (min-width: 768px) {
                 .about {
@@ -111,16 +97,16 @@
              padding-right: 36px;
              
 
-    &__tittle {
+    &__label {
          
             font-size: 26px;
             padding-top: 130px;
                         }
 
-     &__section-tittle {
+     &__tittle {
                             
             font-size: 48px;
-            line-height: 55px;
+            line-height:1.13;
             padding-top: 16px;
             }       
         
