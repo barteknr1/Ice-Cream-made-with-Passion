@@ -1,17 +1,27 @@
 // =====> classes .products are used above ul <===== //
-// .products-block {
-//   margin-top: 121px;
-// }
 
-.products__titles {
+.products__label {
   text-align: center;
   margin-bottom: 150px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 159px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 259px;
+  }
 }
 
 .products__top-line {
   font-family: Titan One, sans-serif;
   color: var(--color-header-label);
+
   font-size: var(--font-header-label-mobile);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-header-label-tablet);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-label-desktop);
+  }
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0em;
@@ -21,6 +31,12 @@
   font-family: Titan One, sans-serif;
   color: var(--color-header);
   font-size: var(--font-header-mobile);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-header-tablet);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-desktop);
+  }
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.04em;
@@ -31,6 +47,12 @@
 .product {
   position: relative;
   max-width: 280px;
+  @media screen and (min-width: 768px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 335px;
+  }
   width: 100%;
   justify-content: center;
   display: flex;
@@ -190,6 +212,12 @@
   flex-direction: column;
   background-color: var(--color-ice-cream);
   width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+  }
   border-radius: 24px;
   align-items: center;
 
@@ -209,21 +237,41 @@
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  text-align: center;
   margin-top: 161px;
+  @media screen and (min-width: 768px) {
+    margin-top: 152px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 163px;
+  }
   margin-bottom: 30px;
 }
 
 .product__dots {
   width: 24px;
   height: 6px;
+  @media screen and (min-width: 768px) {
+    width: 26px;
+    height: 6px;
+  }
 }
 
 .product__description {
   padding: 30px 39px;
-  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 62px;
+  }
   font-weight: 700;
   line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+  }
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--color-white);
@@ -235,81 +283,19 @@
   border-radius: 50%;
   background-color: var(--color-white);
   fill: var(--color-header);
-  margin-bottom: 41px;
   cursor: pointer;
-}
 
-@media screen and (min-width: 768px) {
-  .products__titles {
-    margin-bottom: 159px;
-  }
-
-  .products__top-line {
-    font-size: var(--font-header-label-tablet);
-  }
-
-  .products__header {
-    font-size: var(--font-header-tablet);
-  }
-
-  .product {
-    max-width: 220px;
-    width: 100%;
-  }
-
-  .product__background {
-    width: 220px;
-  }
-
-  .product__name {
-    margin-top: 152px;
-  }
-
-  .product__dots {
-    width: 26px;
-    height: 6px;
-  }
-
-  .product__description {
-    padding-left: 11px;
-    padding-right: 11px;
-    line-height: 1.76;
+  &:active {
+    fill: var(--color-white);
+    background-color: var(--color-header);
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .products__titles {
-    margin-bottom: 259px;
-  }
-
-  .products__top-line {
-    font-size: var(--font-header-label-desktop);
-  }
-
-  .products__header {
-    font-size: var(--font-header-desktop);
-  }
-
-  .product {
-    max-width: 335px;
-    width: 100%;
-  }
-
-  .product__background {
-    width: 335px;
-  }
-
-  .product__name {
-    margin-top: 163px;
-  }
-
-  .product__description {
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-bottom: 62px;
-  }
-
-  .product__arrow-right {
+.product__button {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 41px;
+  @media screen and (min-width: 1280px) {
     margin-bottom: 50px;
   }
 }
