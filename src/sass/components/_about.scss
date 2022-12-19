@@ -85,14 +85,25 @@
 
                 }
 
-              
-
-                &__svg{
-                 width: 4.43px;
-                height: 8px;
+                          .button_about {
+                              position: relative;
+                              width: 176px;
+                              padding-left: 37px;
+                             
+                          
+            
+                                &__svg{
+                              position: absolute;
+                              top: 19px;
+                              right: 46px;
+                            
+                            border: 2px solid #D41443;
+                                }
+                }
+             
                 
                                  }
-            }
+            
 
 
         @media screen and (min-width: 768px) {
