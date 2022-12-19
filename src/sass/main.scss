@@ -7,17 +7,27 @@
 @import './example';
 @import './utils/reset';
 @import './utils/variables';
+@import './utils/gap';
+@import './utils/d-none';
+@import './utils/backdrop';
+@import './utils/is-hidden';
 
 @import './components/body';
 @import './components/section';
 @import './components/container';
-
 @import './components/header';
 @import './components/header-img';
+@import './components/advantages';
+@import './components/gallery';
 @import './components/slogan';
+@import './components/objects-numbers';
 @import './components/buttons-header';
+@import './components/header-description';
 @import './components/mobile-menu';
+@import './components/mobile-nav';
 @import './components/button';
-@import './utils/gap';
-
+@import './components/footer';
+@import './components/socials';
+@import './components/customersreview';
+@import './components/products';
 @import './components/contacts';
