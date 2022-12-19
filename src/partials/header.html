@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="header-box-container">
     <div class="header-box">
       <a href="./index.html">
         <img
@@ -8,6 +8,15 @@
           sizes="199px"
           alt="Logo ICE CREAM"
       /></a>
+      <nav class="d-none-tablet">
+        <ul class="nav">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">How it&#8217;s made?</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
       <div class="header-box header-box--secondary">
         <button
           class="mobile-menu__toggle open-menu d-none-desktop"
@@ -25,6 +34,8 @@
         </button>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="slogan">
       <h1 class="slogan__title">
         ice cream made with <span class="slogan__title slogan__title--accent">passion</span>
@@ -42,7 +53,9 @@
     </div>
     <div class="buttons-header">
       <a class="buttons-header__btn" href="#">Products</a>
-      <a class="buttons-header__btn buttons-header__btn--color-change" href="#"
+      <a
+        class="buttons-header__btn buttons-header__btn--color-change buttons-header__btn--padding-different"
+        href="#"
         >How it&#8217;s made?</a
       >
     </div>

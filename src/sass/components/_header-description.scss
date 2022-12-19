@@ -1,5 +1,9 @@
 .header-description {
   padding-left: 120px;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 180px;
+  }
 }
 
 .header-description__text {
@@ -8,6 +12,13 @@
   font-size: 8px;
   line-height: 1.5;
   margin-bottom: 7px;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    font-size: var(--font-14px);
+    line-height: 1.43;
+    margin-bottom: 20px;
+  }
 }
 
 .header-description__btn {
@@ -20,6 +31,11 @@
   cursor: pointer;
   transition: background-color 250ms;
 
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+
   &:hover,
   &:focus {
     background-color: #ecebeb;
@@ -31,4 +47,9 @@
   position: absolute;
   top: -1px;
   left: -2px;
+
+  @media screen and (min-width: 1280px) {
+    width: 29px;
+    height: 29px;
+  }
 }
