@@ -68,3 +68,39 @@
 }
 
 
+@media only screen and (min-width: 768px) {
+
+  .customers-review{
+  &__article { 
+    font-size: 14px;
+    margin: 0px 64px 29px 64px;
+    line-height: 2.8;
+  }
+  
+  &__text {
+    font-size: 14px;
+  }
+
+  &__icon-quote {
+    left: 125px;
+  }
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .customers-review{
+    &__article { 
+      font-size: 16px;
+      margin: 0px 64px 29px 64px;
+    }
+    &__icon-quote {
+      left: 125px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
