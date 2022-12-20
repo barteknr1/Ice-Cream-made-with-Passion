@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  gap: 35px;
+}
+
+.nav__link {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--font-16px);
+  line-height: 1.31;
+  transition: color 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--color-header);
+  }
+}

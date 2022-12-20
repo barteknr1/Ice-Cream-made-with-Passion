@@ -1,0 +1,90 @@
+.modal__products {
+  width: 90%;
+  border-radius: 24px;
+  max-width: 300px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 400px;
+  }
+
+  &--ice-cream {
+    background: var(--color-ice-cream-modal);
+    background: linear-gradient(0deg, var(--color-ice-cream-modal) 0%, var(--color-white) 100%);
+  }
+
+  &--ice-coffee {
+    background: var(--color-ice-coffee-modal);
+    background: linear-gradient(0deg, var(--color-ice-coffee-modal) 0%, var(--color-white) 100%);
+  }
+
+  &--milkshakes {
+    background: var(--color-milkshakes-modal);
+    background: linear-gradient(0deg, var(--color-milkshakes-modal) 0%, var(--color-white) 100%);
+  }
+}
+.products-modal__title {
+  font-family: var(--font-header);
+  font-size: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-mobile);
+  }
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  &--ice-cream {
+    color: var(--color-ice-cream-modal);
+  }
+
+  &--ice-coffee {
+    color: var(--color-ice-coffee-modal);
+  }
+
+  &--milkshakes {
+    color: var(--color-milkshakes-modal);
+  }
+}
+
+.products-modal__description {
+  padding: 40px 15px 20px 15px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 40px 40px 20px 40px;
+  }
+
+  font-size: var(--font-header-label-mobile);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow: 2px 2px 4px darkgray;
+  color: var(--color-white);
+}
+
+.modal__cross {
+  &--ice-cream {
+    --color2: var(--color-ice-cream-modal);
+  }
+
+  &--ice-coffee {
+    --color2: var(--color-ice-coffee-modal);
+  }
+
+  &--milkshakes {
+    --color2: var(--color-milkshakes-modal);
+  }
+}

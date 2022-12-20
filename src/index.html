@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
@@ -20,14 +25,21 @@
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+
     <include src="./partials/header.html"></include>
     <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/gallery.html"></include>
     <include src="./partials/customersreview.html"></include>
+    <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/mobile-menu.html"></include>
 
+    <include src="./partials/customersreview.html"></include>
+
+    <!-- DOROTA -->
+    <include src="./partials/products-modal.html"></include>
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./js/index.js"></script>
     <script
@@ -38,5 +50,10 @@
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/backdrop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/open-modal.js"></script>
   </body>
 </html>

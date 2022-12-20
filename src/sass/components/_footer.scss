@@ -31,6 +31,7 @@
     line-height: 1.17;
     text-transform: uppercase;
     width: 232px;
+    margin-top: 0px;
     color: var(--color-header-label);
     margin-block-end: 17px;
 
@@ -53,16 +54,18 @@
     font-size: var(--font-header-mobile);
     line-height: 1.15;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     width: 200px;
     margin-bottom: 43px;
     color: #d41443;
+    margin-top: 16px;
+
 
     @media screen and (min-width: 768px) {
       font-size: var(--font-header-tablet);
       line-height: 1.15;
       letter-spacing: 0.06em;
       width: 340px;
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
@@ -94,7 +97,7 @@
   }
 
   &__phone {
-    color: #d41443;
+    color: var(--color-header);
   }
 }
 
