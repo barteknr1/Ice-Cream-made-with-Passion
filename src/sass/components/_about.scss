@@ -108,15 +108,16 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-      font-size: var(--font-14px);
-      line-height: 176%;
-      width: 340px;
-    }
-         @media screen and (min-width: 1280px) {
-           font-size: var(--font-16px);
-           line-height: 176%;
-           width: 463px;
-         }
+        font-size: var(--font-14px);
+        line-height: 176%;
+        width: 340px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        font-size: var(--font-16px);
+        line-height: 176%;
+        width: 463px;
+      }
   }
 
   &__text--part2 {
