@@ -1,0 +1,36 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-map {
+  width: 90%;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  &__window-map {
+    margin: 0 5%;
+  }
+  &__button {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-map {
+    width: 1200px;
+  }
+}
