@@ -26,49 +26,50 @@
 
 .footer-left {
   &__title {
-    font-family: 'Titan One';
-    font-size: 18px;
+    font-family: var(--font-header);
+    font-size: var(--font-header-label-mobile);
     line-height: 1.17;
     text-transform: uppercase;
     width: 232px;
-
+    margin-top: 0px;
     color: var(--color-header-label);
     margin-block-end: 17px;
 
     @media screen and (min-width: 768px) {
-      font-size: 26px;
+      font-size: var(--font-header-label-tablet);
       line-height: 1.15;
       letter-spacing: 0.04em;
       width: 340px;
     }
 
     @media screen and (min-width: 1280px) {
-      font-size: 30px;
+      font-size: var(--font-header-label-desktop);
       line-height: 1.13;
       width: 472px;
     }
   }
 
   &__description {
-    font-family: 'Titan One';
-    font-size: 34px;
+    font-family: var(--font-header);
+    font-size: var(--font-header-mobile);
     line-height: 1.15;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     width: 200px;
     margin-bottom: 43px;
-
     color: #d41443;
+    margin-top: 16px;
+
 
     @media screen and (min-width: 768px) {
-      font-size: 48px;
+      font-size: var(--font-header-tablet);
       line-height: 1.15;
       letter-spacing: 0.06em;
       width: 340px;
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
-      font-size: 58px;
+      font-size: var(--font-header-desktop);
       line-height: 1.14;
       width: 478px;
     }
@@ -78,25 +79,25 @@
   &__address {
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: var(--font-12px);
     line-height: 1.83;
     text-align: right;
     /*width: 230px;*/
 
     @media screen and (min-width: 768px) {
-      font-size: 14px;
+      font-size: var(--font-14px);
       line-height: 1.86;
     }
 
     @media screen and (min-width: 1280px) {
-      font-size: 16px;
+      font-size: var(--font-16px);
       line-height: 1.88;
       letter-spacing: 0.02em;
     }
   }
 
   &__phone {
-    color: #d41443;
+    color: var(--color-header);
   }
 }
 
