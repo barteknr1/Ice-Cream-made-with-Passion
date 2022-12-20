@@ -51,7 +51,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       padding-top: 50px;
-      max-height: 400px;
+      max-height: 445px;
       max-width: 679px;
       justify-content: space-between;
     }
@@ -96,7 +96,11 @@
     width: 176px;
     padding-left: 34px;
     padding-right: 59px;
-    margin-left: 30px;
+    margin-left: 50px;
+  
+   
+    
+  
 
     &__svg {
       position: absolute;
@@ -114,6 +118,7 @@
     top: 712px;
     object-fit: contain;
     object-position: top;
+    z-index: 2;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       display: none;
