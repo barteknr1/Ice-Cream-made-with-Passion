@@ -1,0 +1,125 @@
+.form {
+  padding-top: 15px;
+
+  @media screen and (max-width: 375px) {
+    padding-top: 30px;
+  }
+}
+
+.form__header {
+  color: var(--color-white);
+  font-family: var(--font-header);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form__icon {
+  fill: var(--color-header-label);
+  position: absolute;
+  top: 30px;
+  left: 13px;
+  transition: fill 250ms;
+}
+
+.form__box {
+  position: relative;
+
+  &:focus-within {
+    .form__icon {
+      fill: var(--color-form);
+    }
+  }
+
+  &--secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &--secondary {
+    width: 210px;
+  }
+}
+
+.form__text {
+  color: var(--color-white);
+  font-size: var(--font-16px);
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+
+  &--secondary {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-12px);
+  }
+
+  &--font-titan {
+    font-family: var(--font-header);
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid var(--color-header-label);
+  border-radius: 4px;
+  outline: none;
+  padding-block: 10px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+  transition: border-color 250ms;
+
+  &:focus {
+    border-color: var(--color-form);
+  }
+}
+
+.form__comment {
+  width: 100%;
+  border: 1px solid var(--color-header-label);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  transition: border-color 250ms;
+
+  &:focus {
+    border-color: var(--color-form);
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-16px);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+  }
+}
+
+.form__btn-case {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__btn-case__icon {
+  position: absolute;
+  top: 18px;
+  right: 26px;
+}
+
+.form__btn {
+  width: 160px;
+  position: relative;
+  transition: background-color 250ms;
+}

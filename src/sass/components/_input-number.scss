@@ -1,0 +1,31 @@
+.input-number {
+  width: 40px;
+  height: 34px;
+  position: relative;
+  border: 1px solid var(--color-header-label);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 5px;
+  appearance: none;
+  transition: border-color 250ms;
+
+  &:focus {
+    border-color: var(--color-form);
+  }
+}
+
+.input-number:invalid + .input-number__validity::after {
+  content: '✖';
+  position: absolute;
+  top: 13px;
+  right: -18px;
+  color: var(--color-header);
+}
+
+.input-number:valid + .input-number__validity::after {
+  content: '✓';
+  position: absolute;
+  top: 13px;
+  right: -18px;
+  color: var(--color-white);
+}
