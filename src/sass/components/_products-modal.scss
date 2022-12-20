@@ -1,33 +1,37 @@
 .modal__products {
   max-width: 300px;
 
+  @media screen and (min-width: 768px) {
+    max-width: 330px;
+  }
+
   @media screen and (min-width: 1280px) {
     max-width: 400px;
   }
 
   &--ice-cream {
-    background: rgb(250, 120, 153);
-    background: linear-gradient(0deg, rgba(250, 120, 153, 1) 0%, var(--color-white) 100%);
+    background: var(--color-ice-cream-modal);
+    background: linear-gradient(0deg, var(--color-ice-cream-modal) 0%, var(--color-white) 100%);
   }
 
   &--ice-coffee {
-    background: rgb(232, 159, 55);
-    background: linear-gradient(0deg, rgba(232, 159, 55, 1) 0%, var(--color-white) 100%);
+    background: var(--color-ice-coffee-modal);
+    background: linear-gradient(0deg, var(--color-ice-coffee-modal) 0%, var(--color-white) 100%);
   }
 
   &--milkshakes {
-    background: rgb(133, 177, 74);
-    background: linear-gradient(0deg, rgba(133, 177, 74, 1) 0%, var(--color-white) 100%);
+    background: var(--color-milkshakes-modal);
+    background: linear-gradient(0deg, var(--color-milkshakes-modal) 0%, var(--color-white) 100%);
   }
 }
 .products-modal__title {
-  font-family: Titan One, sans-serif;
-  font-size: 20px;
+  font-family: var(--font-header);
+  font-size: 24px;
   @media screen and (min-width: 768px) {
-    font-size: var(--font-header-label-tablet);
+    font-size: 30px;
   }
   @media screen and (min-width: 1280px) {
-    font-size: var(--font-header-label-desktop);
+    font-size: var(--font-header-mobile);
   }
   font-weight: 400;
   line-height: 1.15;
@@ -36,24 +40,27 @@
   margin-bottom: 0px;
 
   &--ice-cream {
-    color: var(--color-mobile-menu);
+    color: var(--color-ice-cream-modal);
   }
 
   &--ice-coffee {
-    color: #d1913c;
+    color: var(--color-ice-coffee-modal);
   }
 
   &--milkshakes {
-    color: #95c456;
+    color: var(--color-milkshakes-modal);
   }
 }
 
 .products-modal__description {
   padding: 40px 15px 20px 15px;
+
   @media screen and (min-width: 1280px) {
     padding: 40px 40px 20px 40px;
   }
+
   font-size: var(--font-header-label-mobile);
+
   @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
@@ -68,14 +75,14 @@
 
 .modal__cross {
   &--ice-cream {
-    --color6: var(--color-header);
+    --color2: var(--color-ice-cream-modal);
   }
 
   &--ice-coffee {
-    fill: #d1913c;
+    --color2: var(--color-ice-coffee-modal);
   }
 
-  &--milkshaek {
-    fill: #95c456;
+  &--milkshakes {
+    --color2: var(--color-milkshakes-modal);
   }
 }
