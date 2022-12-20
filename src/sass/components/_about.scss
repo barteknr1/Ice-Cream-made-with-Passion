@@ -4,13 +4,13 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding-left: 39px;
-    padding-right: 36px;
+    padding-top: 0px;
   }
 
      @media screen and (min-width: 1280px) {
        padding-left: 112px;
        padding-right: 117px;
+       padding-top: 0;
      }
 
   &__label {
@@ -128,7 +128,7 @@
       font-size: var(--font-14px);
       width: 340px;
     }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1280px) {
           font-size: var(--font-14px);
           width: 463px;
         }
@@ -175,7 +175,7 @@
             top: 340px;
             object-fit: contain;
             object-position: top;
-            z-index: 0;
+            z-index: 2;
         }
   }
 }
