@@ -1,6 +1,16 @@
 .slogan {
-  width: 225px;
-  margin-bottom: 19px;
+  width: 230px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+  }
 }
 
 .slogan__title {
@@ -12,9 +22,32 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+    width: 170px;
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+    width: 277px;
+    margin-top: 84px;
+  }
+
   &--accent {
     color: var(--color-header);
-    font-size: 48px;
+    font-size: var(--font-header-tablet);
     line-height: 0.96;
+
+    @media screen and (min-width: 768px) {
+      font-size: var(--font-header-mobile);
+      line-height: 0.91;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: var(--font-header-desktop);
+    }
   }
 }

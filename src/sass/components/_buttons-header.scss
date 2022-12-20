@@ -1,4 +1,56 @@
 .buttons-header {
-  display: inline-flex;
+  display: flex;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 15px;
+    margin-bottom: 112px;
+  }
+}
+
+.buttons-header__btn {
+  color: var(--color-white);
+  font-size: 8px;
+  line-height: 1.25;
+  background-color: var(--color-header);
+  border-radius: 20px;
+  border: none;
+  padding-block: 7px;
+  padding-inline: 15px;
+  cursor: pointer;
+  transition: background-color 250ms;
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-14px);
+    line-height: 1.29;
+    padding-block: 11px;
+    padding-inline: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  &--color-change {
+    color: var(--color-header);
+    background-color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &--padding-different {
+    padding-inline: 14px;
+
+    @media screen and (min-width: 1280px) {
+      padding-inline: 20px;
+    }
+  }
 }

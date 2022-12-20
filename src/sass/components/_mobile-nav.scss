@@ -1,0 +1,30 @@
+.mobile-nav {
+  text-align: start;
+}
+
+.mobile-nav__item {
+  border-top: 1px solid #e18298;
+  padding-block: 12px;
+  padding-left: 21px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+.mobile-nav__link {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--font-14px);
+  line-height: 1.29;
+  transition: color 250ms;
+
+  &:hover,
+  &:focus {
+    color: var(--color-header);
+  }
+}

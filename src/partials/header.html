@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="header-box-container">
     <div class="header-box">
       <a href="./index.html">
         <img
@@ -8,25 +8,73 @@
           sizes="199px"
           alt="Logo ICE CREAM"
       /></a>
-      <button
-        class="mobile-menu__toggle open-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      ></button>
+      <nav class="d-none-tablet">
+        <ul class="nav">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">How it&#8217;s made?</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-box header-box--secondary">
+        <button
+          class="mobile-menu__toggle open-menu d-none-desktop"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          backdrop-open
+        >
+          <svg width="20" height="12"><use xlink:href="./images/icons.svg#icon-burger"></use></svg>
+        </button>
+        <button class="header-box__btn button button--bright d-none-mobile" type="button">
+          Buy now<svg class="header-box__icon" width="8" height="10">
+            <use xlink:href="./images/icons.svg#icon-arrow-without-line"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
+  <div class="container">
     <div class="slogan">
       <h1 class="slogan__title">
         ice cream made with <span class="slogan__title slogan__title--accent">passion</span>
       </h1>
+      <ul class="objects-numbers d-none-mobile">
+        <li class="objects-numbers__item">
+          <p class="objects-numbers__value">16</p>
+          <p class="objects-numbers__name">cafes</p>
+        </li>
+        <li class="objects-numbers__item">
+          <p class="objects-numbers__value">23</p>
+          <p class="objects-numbers__name">food trucks</p>
+        </li>
+      </ul>
     </div>
     <div class="buttons-header">
-      <button type="button"><a href="#" class="">Products</a></button>
-      <button type="button"><a href="#" class="">How it&#8217;s made?</a></button>
+      <a class="buttons-header__btn" href="#">Products</a>
+      <a
+        class="buttons-header__btn buttons-header__btn--color-change buttons-header__btn--padding-different"
+        href="#"
+        >How it&#8217;s made?</a
+      >
     </div>
     <div class="header-img">
       <div class="header-img__ice-cream"></div>
       <div class="header-img__circle"></div>
+      <div class="header-img__milk d-none-mobile"></div>
+      <div class="header-img__girl d-none-mobile"></div>
+    </div>
+    <div class="header-description d-none-mobile">
+      <p class="header-description__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="header-description__btn" type="button">
+        <svg class="header-description__icon" width="21px" height="21px">
+          <use xlink:href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>

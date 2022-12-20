@@ -1,8 +1,14 @@
+.header-img {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .header-img__ice-cream {
   width: 171px;
   height: 410px;
   position: absolute;
-  top: 92px;
+  top: 95px;
   right: 30px;
   z-index: -1;
   background-image: url('../images/mobile/header-ice-cream-171.png');
@@ -14,13 +20,43 @@
     background-image: url('../images/mobile/header-ice-cream-342.png');
     background-size: 171px 410px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 143px;
+    height: 336px;
+    top: -225px;
+    right: 209px;
+    background-image: url('../images/tablet/header-ice-cream-143.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/header-ice-cream-286.png');
+    background-size: 143px 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 236px;
+    height: 557px;
+    top: -375px;
+    right: 330px;
+    background-image: url('../images/desktop/header-ice-cream-236.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/desktop/header-ice-cream-472.png');
+    background-size: 236px 557px;
+  }
 }
 
 .header-img__circle {
   width: 284px;
   height: 344px;
   position: absolute;
-  top: 83px;
+  top: 85px;
   right: 0;
   z-index: -2;
   background-image: url('../images/mobile/header-circle-284.png');
@@ -30,5 +66,96 @@
     screen and (min-resolution: 2dppx) and (min-width: 320px) {
     background-image: url('../images/mobile/header-circle-568.png');
     background-size: 284px 344px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    top: -267px;
+    right: 100px;
+    background-image: url('../images/tablet/header-circle-324.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/header-circle-648.png');
+    background-size: 324px 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    top: -445px;
+    right: 151px;
+    background-image: url('../images/desktop/header-circle-538.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/desktop/header-circle-1076.png');
+    background-size: 538px 538px;
+  }
+}
+
+.header-img__milk {
+  width: 124px;
+  height: 126px;
+  position: absolute;
+  top: -43px;
+  left: 0;
+  background-image: url('../images/tablet/header-milk-124.png');
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/header-milk-248.png');
+    background-size: 124px 126px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 188px;
+    height: 191px;
+    left: -39px;
+    background-image: url('../images/desktop/header-milk-188.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/desktop/header-milk-376.png');
+    background-size: 188px 191px;
+  }
+}
+
+.header-img__girl {
+  width: 168px;
+  height: 133px;
+  position: absolute;
+  top: -22px;
+  right: 0;
+  background-image: url('../images/tablet/header-girl-168.png');
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/header-girl-336.png');
+    background-size: 168px 133px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 293px;
+    height: 232px;
+    top: -50px;
+    right: -6px;
+    background-image: url('../images/desktop/header-girl-293.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/desktop/header-girl-586.png');
+    background-size: 293px 232px;
   }
 }

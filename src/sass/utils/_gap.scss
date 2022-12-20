@@ -1,0 +1,45 @@
+// GAP UŻYWAMY NA TAG UL
+
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 30px;
+  }
+
+  // ABOUT UŻYWAMY DO SEKCJI POD HOW IT'S MADE
+
+  &--about {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media (min-width: 768px) {
+      gap: 60px;
+    }
+
+    @media (min-width: 1280px) {
+      gap: 90px;
+    }
+  }
+
+  &--products {
+    @media screen and (min-width: 1280px) {
+      gap: 24px;
+    }
+  }
+
+  &--products {
+    @media screen and (min-width: 1280px) {
+      gap: 24px;
+    }
+  }
+}
