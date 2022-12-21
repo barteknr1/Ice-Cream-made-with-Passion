@@ -32,13 +32,12 @@
     justify-content: center;
   }
 
-    @media screen and (min-width: 768px) {
-      font-size: var(--font-header-tablet);
-    }
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-header-tablet);
+  }
 
-    @media screen and (min-width: 1280px) {
-      font-size: var(--font-header-desktop);
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-desktop);
   }
 
   &__position {
@@ -125,25 +124,6 @@
     }
   }
 
-  .button-about {
-    position: relative;
-    width: 176px;
-    padding-left: 34px;
-    padding-right: 59px;
-    margin-left: 30px;
-
-    @media screen and (min-width: 768px) {
-      margin: 0;
-    }
-
-    &__svg {
-      position: absolute;
-      top: 17px;
-      left: 135px;
-      height: 10px;
-      width: 7px;
-    }
-  }
   &__background {
     width: 100%;
     height: 100%;
@@ -168,5 +148,24 @@
       object-position: top;
       z-index: -1;
     }
+  }
+}
+.button-about {
+  position: relative;
+  width: 176px;
+  padding-left: 34px;
+  padding-right: 59px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 17px;
+    left: 135px;
+    height: 10px;
+    width: 7px;
   }
 }
