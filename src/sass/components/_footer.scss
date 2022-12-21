@@ -1,5 +1,10 @@
 .footer {
   background-color: var(--color-secondary-background);
+  padding-top: 110px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 165px;
+  }
 
   &__wrapper {
     padding-bottom: 43px;
@@ -26,11 +31,12 @@
 
 .footer-left {
   &__title {
-    font-family: 'Titan One';
+    font-family: var(--font-header);
     font-size: var(--font-header-label-mobile);
+    line-height: 1.17;
+    text-transform: uppercase;
     width: 232px;
     margin-top: 0px;
-
     color: var(--color-header-label);
     margin-block-end: 17px;
 
@@ -49,12 +55,13 @@
   }
 
   &__description {
-    font-family: 'Titan One';
+    font-family: var(--font-header);
     font-size: var(--font-header-mobile);
     line-height: 1.15;
     letter-spacing: 0.04em;
     width: 200px;
     margin-bottom: 43px;
+    color: #d41443;
     margin-top: 16px;
 
     @media screen and (min-width: 768px) {

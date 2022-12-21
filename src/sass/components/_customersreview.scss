@@ -2,7 +2,7 @@
   &__img-container {
     display: flex;
     justify-content: center;
-    margin: 80px 0 29px 0;
+    margin-bottom: 30px;
   }
   &__first-box {
     background-color: #fafafa;
@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px 0 86px 0;
+    margin-top: 30px;
   }
   &__icon-dots {
     width: 32px;
@@ -65,13 +65,12 @@
     border-radius: 50%;
     background-color: #d9d9d9;
   }
-}
-@media only screen and (min-width: 768px) {
-  .customers-review {
+
+  @media only screen and (min-width: 768px) {
     &__article {
-      font-size: 14px;
+      font-size: var(--font-14px);
       margin: 0px 64px 29px 64px;
-      line-height: 2.8;
+      line-height: 2.16;
     }
     &__text {
       font-size: 14px;
@@ -80,18 +79,25 @@
       left: 125px;
     }
   }
-}
-@media screen and (min-width: 1280px) {
-  .customers-review {
+  @media screen and (min-width: 1280px) {
     &__article {
-      font-size: 16px;
+      font-size: var(--font-16px);
       margin: 0px 64px 29px 64px;
+      line-height: 1.86;
     }
     &__icon-quote {
       left: 125px;
     }
     &__text {
       font-size: 20px;
+    }
+    &__gradient {
+      background-image: repeating-linear-gradient(
+        rgba(0, 0, 0, 0) 0,
+        rgba(0, 0, 0, 0) 28px,
+        #e1e1e1 28px,
+        rgba(0, 0, 0, 0) 29px
+      );
     }
   }
 }

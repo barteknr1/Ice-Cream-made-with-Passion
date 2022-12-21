@@ -1,0 +1,142 @@
+.form {
+  padding-top: 15px;
+
+  @media screen and (max-width: 375px) {
+    padding-top: 30px;
+  }
+}
+
+.form__header {
+  color: var(--color-form-text);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+  }
+}
+
+.form__icon {
+  fill: var(--color-form-bg);
+  position: absolute;
+  top: 30px;
+  left: 13px;
+  transition: fill 250ms;
+}
+
+.form__box {
+  position: relative;
+
+  &:focus-within {
+    .form__icon {
+      fill: var(--color-form-selection);
+    }
+  }
+
+  &--secondary {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 5px;
+
+  &--secondary {
+    width: 210px;
+  }
+}
+
+.form__text {
+  color: var(--color-form-text);
+  font-size: var(--font-14px);
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+
+  &--secondary {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-12px);
+    font-weight: 500;
+  }
+
+  &--font-bigger {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+.form__input {
+  width: 100%;
+  background-color: var(--color-form-input);
+  border: 1px solid var(--color-form-bg);
+  border-radius: 4px;
+  outline: none;
+  padding-block: 10px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+  transition: border-color 250ms;
+
+  &:focus {
+    border-color: var(--color-form-selection);
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-16px);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+  }
+}
+
+.form__comment {
+  width: 100%;
+  background-color: var(--color-form-input);
+  border: 1px solid var(--color-form-bg);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  transition: border-color 250ms;
+
+  &:focus {
+    border-color: var(--color-form-selection);
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-16px);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+  }
+}
+
+.form__btn-case {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__btn-case__icon {
+  position: absolute;
+  top: 18px;
+  right: 34px;
+}
+
+.form__btn {
+  width: 160px;
+  position: relative;
+  padding-right: 18px;
+  background-color: var(--color-form-text);
+  transition: background-color 250ms;
+}

@@ -1,42 +1,43 @@
 .about {
   background-color: rgba(255, 245, 246, 1);
-  padding-top: 125px;
   position: relative;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 39px;
-    padding-right: 36px;
-  }
+  z-index: 1;
 
   &__label {
     font-family: var(--font-header);
     font-size: var(--font-header-label-mobile);
+    line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
     color: var(--color-header-label);
 
     @media screen and (min-width: 768px) {
-      font-size: 26px;
-      padding-top: 130px;
+      font-size: var(--font-header-label-tablet);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: var(--font-header-label-desktop);
     }
   }
 
   &__title {
     font-family: var(--font-header);
-    font-size: 34px;
-    line-height: 1.14;
+    font-size: var(--font-header-mobile);
+    line-height: 1.15;
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
-    color: #d41443;
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    @media screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 1.13;
-      padding-top: 16px;
-    }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-header-tablet);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--font-header-desktop);
   }
 
   &__position {
@@ -47,76 +48,124 @@
     margin-top: 26px;
 
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
       flex-wrap: wrap;
-      padding-top: 50px;
-      max-height: 400px;
+      margin-top: 50px;
+      max-height: 445px;
       max-width: 679px;
       justify-content: space-between;
     }
+    @media screen and (min-width: 1280px) {
+      margin-top: 55px;
+      max-height: 516px;
+      max-width: 1053px;
+    }
   }
 
-  &__about__img {
+  &__img {
     margin-bottom: 46px;
+
     @media screen and (min-width: 768px) {
-      width: 516px;
+      max-width: 340px;
       height: 339px;
-      padding-bottom: 166px;
+      margin: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 516px;
+      height: 516px;
+    }
+  }
+
+  &__content-wrapper {
+    @media screen and (min-width: 768px) {
+      margin-left: 20px;
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: 74px;
     }
   }
 
   &__text {
     font-weight: 500;
     font-size: var(--font-12px);
-    line-height: 162%;
+    line-height: 1.62;
     color: var(--color-black);
     padding: 0 30px;
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       font-size: var(--font-14px);
-      line-height: 176%;
-      width: 340px;
+      line-height: 1.76;
+      max-width: 340px;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: var(--font-16px);
+      letter-spacing: 0.04em;
+      max-width: 463px;
     }
   }
 
   &__text--part2 {
     color: #907e82;
     margin-bottom: 20px;
+    font-size: var(--font-12px);
+    line-height: 1.62;
 
     @media screen and (min-width: 768px) {
       font-size: var(--font-14px);
-      width: 340px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      margin-bottom: 45px;
+    }
+    @media screen and (min-width: 1280px) {
+      line-height: 1.94;
     }
   }
 
-  .button_about {
-    position: relative;
-    width: 176px;
-    padding-left: 34px;
-    padding-right: 59px;
-    margin-left: 30px;
-
-    &__svg {
-      position: absolute;
-      top: 17px;
-      left: 135px;
-      height: 10px;
-      width: 7px;
-    }
-  }
   &__background {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
-    top: 712px;
+    top: 638px;
     object-fit: contain;
     object-position: top;
+    z-index: 2;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       display: none;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 215px;
+      object-fit: contain;
+      object-position: top;
+      z-index: -1;
+    }
+  }
+}
+.button-about {
+  position: relative;
+  width: 176px;
+  padding-left: 34px;
+  padding-right: 59px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 17px;
+    left: 135px;
+    height: 10px;
+    width: 7px;
   }
 }
