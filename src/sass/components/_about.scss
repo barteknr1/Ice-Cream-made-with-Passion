@@ -9,32 +9,21 @@
   }
 
   &__label {
-    font-family: var(--font-header);
-    font-size: var(--font-header-label-mobile);
     text-align: center;
     text-transform: uppercase;
-    color: var(--color-header-label);
 
     @media screen and (min-width: 768px) {
-      font-size: 26px;
       padding-top: 130px;
     }
   }
 
   &__title {
-    font-family: var(--font-header);
-    font-size: 34px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
     margin-top: 15px;
     display: flex;
     justify-content: center;
     text-align: center;
     @media screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 1.13;
       padding-top: 16px;
     }
   }
