@@ -1,10 +1,12 @@
 .about {
   background-color: rgba(255, 245, 246, 1);
   position: relative;
+  z-index: 1;
 
   &__label {
     font-family: var(--font-header);
     font-size: var(--font-header-label-mobile);
+    line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
     color: var(--color-header-label);
@@ -21,7 +23,7 @@
   &__title {
     font-family: var(--font-header);
     font-size: var(--font-header-mobile);
-    line-height: 1.14;
+    line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
@@ -31,7 +33,6 @@
     text-align: center;
     @media screen and (min-width: 768px) {
       font-size: var(--font-header-tablet);
-      line-height: 1.13;
     }
 
     @media screen and (min-width: 1280px) {
@@ -77,30 +78,31 @@
   &__content-wrapper {
     @media screen and (min-width: 768px) {
       margin-left: 20px;
+      margin-top: 50px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 105px;
+      margin-left: 74px;
     }
   }
 
   &__text {
     font-weight: 500;
     font-size: var(--font-12px);
-    line-height: 1.58;
+    line-height: 1.62;
     color: var(--color-black);
     padding: 0 30px;
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       font-size: var(--font-14px);
-      line-height: 1.79;
+      line-height: 1.76;
       max-width: 340px;
       padding: 0;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: var(--font-16px);
-      line-height: 1.75;
+      letter-spacing: 0.04em;
       max-width: 463px;
     }
   }
@@ -108,25 +110,26 @@
   &__text--part2 {
     color: #907e82;
     margin-bottom: 20px;
-    line-height: 1.58;
+    font-size: var(--font-12px);
+    line-height: 1.62;
 
     @media screen and (min-width: 768px) {
       font-size: var(--font-14px);
-      line-height: 1.79;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      margin-bottom: 45px;
     }
     @media screen and (min-width: 1280px) {
-      font-size: var(--font-14px);
-      line-height: 1.93;
-      margin-bottom: 40px;
+      line-height: 1.94;
     }
   }
 
-  .button_about {
+  .button-about {
     position: relative;
     width: 176px;
     padding-left: 34px;
     padding-right: 59px;
-    margin-left: 50px;
+    margin-left: 30px;
 
     @media screen and (min-width: 768px) {
       margin: 0;
@@ -145,7 +148,7 @@
     height: 100%;
     position: absolute;
     left: 0;
-    top: 712px;
+    top: 638px;
     object-fit: contain;
     object-position: top;
     z-index: 2;
@@ -159,10 +162,10 @@
       height: 100%;
       position: absolute;
       left: 0;
-      top: 340px;
+      top: 215px;
       object-fit: contain;
       object-position: top;
-      z-index: 2;
+      z-index: -1;
     }
   }
 }
