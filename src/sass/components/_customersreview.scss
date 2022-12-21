@@ -70,7 +70,7 @@
     &__article {
       font-size: 14px;
       margin: 0px 64px 29px 64px;
-      line-height: 2.8;
+      line-height: 2.16;
     }
     &__text {
       font-size: 14px;
@@ -78,34 +78,26 @@
     &__icon-quote {
       left: 125px;
     }
+  }
+  @media screen and (min-width: 1280px) {
+    &__article {
+      font-size: 16px;
+      margin: 0px 64px 29px 64px;
+      line-height: 1.86;
+    }
+    &__icon-quote {
+      left: 125px;
+    }
+    &__text {
+      font-size: 20px;
+    }
     &__gradient {
       background-image: repeating-linear-gradient(
         rgba(0, 0, 0, 0) 0,
-        rgba(0, 0, 0, 0) 36px,
-        #e1e1e1 36px,
-        rgba(0, 0, 0, 0) 37px
+        rgba(0, 0, 0, 0) 28px,
+        #e1e1e1 28px,
+        rgba(0, 0, 0, 0) 29px
       );
-    }
-
-    @media screen and (min-width: 1280px) {
-      &__article {
-        font-size: 16px;
-        margin: 0px 64px 29px 64px;
-      }
-      &__icon-quote {
-        left: 125px;
-      }
-      &__text {
-        font-size: 20px;
-      }
-      &__gradient {
-        background-image: repeating-linear-gradient(
-          rgba(0, 0, 0, 0) 0,
-          rgba(0, 0, 0, 0) 39px,
-          #e1e1e1 39px,
-          rgba(0, 0, 0, 0) 40px
-        );
-      }
     }
   }
 }
