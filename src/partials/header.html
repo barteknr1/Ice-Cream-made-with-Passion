@@ -1,6 +1,6 @@
-<header class="header">
-  <div class="container">
-    <div class="header-box">
+<header class="header" id="home">
+  <div class="header-box-container">
+    <div class="header-box animate__animated animate__fadeInDown">
       <a href="./index.html">
         <img
           src="./images/logo-199.png"
@@ -8,6 +8,17 @@
           sizes="199px"
           alt="Logo ICE CREAM"
       /></a>
+      <nav class="d-none-tablet">
+        <ul class="nav">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
+          <li class="nav__item">
+            <a href="#how-it&#8217;s-made" class="nav__link">How it&#8217;s made?</a>
+          </li>
+          <li class="nav__item"><a href="#our-products" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
       <div class="header-box header-box--secondary">
         <button
           class="mobile-menu__toggle open-menu d-none-desktop"
@@ -25,11 +36,13 @@
         </button>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="slogan">
-      <h1 class="slogan__title">
+      <h1 class="slogan__title" data-aos="zoom-out-right" data-aos-duration="1500">
         ice cream made with <span class="slogan__title slogan__title--accent">passion</span>
       </h1>
-      <ul class="objects-numbers d-none-mobile">
+      <ul class="objects-numbers d-none-mobile" data-aos="zoom-out-left" data-aos-duration="1500">
         <li class="objects-numbers__item">
           <p class="objects-numbers__value">16</p>
           <p class="objects-numbers__name">cafes</p>
@@ -40,19 +53,21 @@
         </li>
       </ul>
     </div>
-    <div class="buttons-header">
+    <div class="buttons-header" data-aos="zoom-out-right" data-aos-duration="1500">
       <a class="buttons-header__btn" href="#our-products">Products</a>
-      <a class="buttons-header__btn buttons-header__btn--color-change" href="#"
+      <a
+        class="buttons-header__btn buttons-header__btn--color-change buttons-header__btn--padding-different"
+        href="#how-it&#8217;s-made"
         >How it&#8217;s made?</a
       >
     </div>
     <div class="header-img">
-      <div class="header-img__ice-cream"></div>
-      <div class="header-img__circle"></div>
-      <div class="header-img__milk d-none-mobile"></div>
-      <div class="header-img__girl d-none-mobile"></div>
+      <div class="header-img__ice-cream" data-aos="fade-up" data-aos-duration="1500"></div>
+      <div class="header-img__circle" data-aos="fade-up" data-aos-duration="1500"></div>
+      <div class="header-img__milk d-none-mobile" data-aos="fade-up" data-aos-duration="1500"></div>
+      <div class="header-img__girl d-none-mobile" data-aos="fade-up" data-aos-duration="1500"></div>
     </div>
-    <div class="header-description d-none-mobile">
+    <div class="header-description d-none-mobile" data-aos="fade-up" data-aos-duration="1500">
       <p class="header-description__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et

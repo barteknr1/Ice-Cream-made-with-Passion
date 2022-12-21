@@ -4,18 +4,21 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
 @import './utils/reset';
 @import './utils/variables';
 @import './utils/gap';
 @import './utils/d-none';
 @import './utils/backdrop';
 @import './utils/is-hidden';
+@import './utils/modal';
+@import './utils/headers';
 
+@import './components/about';
 @import './components/body';
 @import './components/section';
 @import './components/container';
 @import './components/header';
+@import './components/nav';
 @import './components/header-img';
 @import './components/advantages';
 @import './components/gallery';
@@ -30,4 +33,5 @@
 @import './components/socials';
 @import './components/customersreview';
 @import './components/products';
-
+@import './components/contacts';
+@import './components/products-modal';
