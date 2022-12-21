@@ -68,7 +68,7 @@
 
   @media only screen and (min-width: 768px) {
     &__article {
-      font-size: 14px;
+      font-size: var(--font-14px);
       margin: 0px 64px 29px 64px;
       line-height: 2.16;
     }
@@ -81,7 +81,7 @@
   }
   @media screen and (min-width: 1280px) {
     &__article {
-      font-size: 16px;
+      font-size: var(--font-16px);
       margin: 0px 64px 29px 64px;
       line-height: 1.86;
     }
