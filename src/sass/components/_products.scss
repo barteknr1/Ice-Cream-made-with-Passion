@@ -11,35 +11,10 @@
   }
 }
 
-.products__top-line {
-  font-family: Titan One, sans-serif;
-  color: var(--color-header-label);
-
-  font-size: var(--font-header-label-mobile);
-  @media screen and (min-width: 768px) {
-    font-size: var(--font-header-label-tablet);
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: var(--font-header-label-desktop);
-  }
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0;
-}
-
 .products__header {
-  font-family: Titan One, sans-serif;
   color: var(--color-header);
-  font-size: var(--font-header-mobile);
-  @media screen and (min-width: 768px) {
-    font-size: var(--font-header-tablet);
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: var(--font-header-desktop);
-  }
   font-weight: 400;
   line-height: 1.14;
-  letter-spacing: 0.04em;
   margin-top: 15px;
 }
 
