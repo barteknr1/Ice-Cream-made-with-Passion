@@ -8,13 +8,16 @@
 
 .form__header {
   color: var(--color-form-text);
-  font-family: var(--font-header);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+  }
 }
 
 .form__icon {
@@ -45,6 +48,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 5px;
 
   &--secondary {
     width: 210px;
@@ -53,13 +57,14 @@
 
 .form__text {
   color: var(--color-form-text);
-  font-size: var(--font-16px);
+  font-size: var(--font-14px);
   line-height: 1.25;
   letter-spacing: 0.04em;
 
   &--secondary {
     color: rgba(0, 0, 0, 0.5);
     font-size: var(--font-12px);
+    font-weight: 500;
   }
 
   &--font-bigger {
