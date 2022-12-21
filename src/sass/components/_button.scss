@@ -10,7 +10,8 @@
   &--bright {
     color: #d41443;
     background-color: #fff;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #ecebeb;
     }
   }
@@ -18,7 +19,8 @@
   &--dark {
     color: #fff;
     background-color: #d41342;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #c7133e;
     }
   }
