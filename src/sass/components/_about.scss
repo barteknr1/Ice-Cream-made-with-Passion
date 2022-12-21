@@ -10,10 +10,6 @@
   &__label {
     text-align: center;
     text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {
-      padding-top: 130px;
-    }
   }
 
   &__title {

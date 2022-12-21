@@ -1,21 +1,23 @@
 // =====> classes .products are used above ul <===== //
-
-.products__label {
-  text-align: center;
-  margin-bottom: 150px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 159px;
+.products {
+  padding-bottom: 100px;
+  &__label {
+    text-align: center;
+    margin-bottom: 150px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 159px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 259px;
+    }
   }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 259px;
-  }
-}
 
-.products__header {
-  color: var(--color-header);
-  font-weight: 400;
-  line-height: 1.14;
-  margin-top: 15px;
+  &__header {
+    color: var(--color-header);
+    font-weight: 400;
+    line-height: 1.14;
+    margin-top: 15px;
+  }
 }
 
 // =====> classes .product are used in li <===== //
