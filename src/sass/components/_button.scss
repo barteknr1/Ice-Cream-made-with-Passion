@@ -3,14 +3,15 @@
   border-radius: 22px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--font-16px);
   line-height: 1.31;
   border: none;
 
   &--bright {
     color: #d41443;
     background-color: #fff;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #ecebeb;
     }
   }
@@ -18,7 +19,8 @@
   &--dark {
     color: #fff;
     background-color: #d41342;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #c7133e;
     }
   }

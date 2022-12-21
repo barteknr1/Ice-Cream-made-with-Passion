@@ -25,12 +25,13 @@
     font-size: var(--font-header-mobile);
     line-height: 1.15;
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
-    color: #d41443;
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    text-align: center;
+  }
+
     @media screen and (min-width: 768px) {
       font-size: var(--font-header-tablet);
     }

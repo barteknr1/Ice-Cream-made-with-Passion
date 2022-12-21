@@ -1,4 +1,10 @@
 .section {
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
+
+  &--contacts {
+    padding: 0;
+    margin-top: 120px;
+  }
 }

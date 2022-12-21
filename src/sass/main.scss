@@ -4,7 +4,6 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
 @import './utils/reset';
 @import './utils/variables';
 @import './utils/gap';
@@ -12,6 +11,7 @@
 @import './utils/backdrop';
 @import './utils/is-hidden';
 @import './utils/modal';
+@import './utils/headers';
 
 @import './components/about';
 @import './components/body';
