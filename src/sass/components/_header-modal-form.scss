@@ -1,5 +1,5 @@
 .header-modal-form {
-  background-color: var(--color-header-label);
+  background-color: #e38299;
   width: 94%;
   max-width: 500px;
   height: 94%;
@@ -17,4 +17,8 @@
   @media screen and (max-height: 650px) and (orientation: landscape) {
     overflow-y: scroll;
   }
+}
+
+.header-modal-form__icon {
+  --color2: var(--color-form-text);
 }

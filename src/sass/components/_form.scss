@@ -7,7 +7,7 @@
 }
 
 .form__header {
-  color: var(--color-white);
+  color: var(--color-form-text);
   font-family: var(--font-header);
   font-size: 20px;
   line-height: 1.5;
@@ -17,7 +17,7 @@
 }
 
 .form__icon {
-  fill: var(--color-header-label);
+  fill: #e38299;
   position: absolute;
   top: 30px;
   left: 13px;
@@ -29,15 +29,13 @@
 
   &:focus-within {
     .form__icon {
-      fill: var(--color-form);
+      fill: var(--color-form-selection);
     }
   }
 
   &--secondary {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-end;
     margin-bottom: 20px;
   }
 }
@@ -53,7 +51,7 @@
 }
 
 .form__text {
-  color: var(--color-white);
+  color: var(--color-form-text);
   font-size: var(--font-16px);
   line-height: 1.25;
   letter-spacing: 0.04em;
@@ -63,14 +61,17 @@
     font-size: var(--font-12px);
   }
 
-  &--font-titan {
-    font-family: var(--font-header);
+  &--font-bigger {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
   }
 }
 
 .form__input {
   width: 100%;
-  border: 1px solid var(--color-header-label);
+  background-color: var(--color-form-bg);
+  border: 1px solid #e38299;
   border-radius: 4px;
   outline: none;
   padding-block: 10px;
@@ -79,13 +80,21 @@
   transition: border-color 250ms;
 
   &:focus {
-    border-color: var(--color-form);
+    border-color: var(--color-form-selection);
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-16px);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
   }
 }
 
 .form__comment {
   width: 100%;
-  border: 1px solid var(--color-header-label);
+  background-color: var(--color-form-bg);
+  border: 1px solid #e38299;
   border-radius: 4px;
   outline: none;
   resize: none;
@@ -94,7 +103,7 @@
   transition: border-color 250ms;
 
   &:focus {
-    border-color: var(--color-form);
+    border-color: var(--color-form-selection);
   }
 
   &::placeholder {
@@ -115,11 +124,13 @@
 .form__btn-case__icon {
   position: absolute;
   top: 18px;
-  right: 26px;
+  right: 34px;
 }
 
 .form__btn {
   width: 160px;
   position: relative;
+  padding-right: 18px;
+  background-color: var(--color-form-text);
   transition: background-color 250ms;
 }

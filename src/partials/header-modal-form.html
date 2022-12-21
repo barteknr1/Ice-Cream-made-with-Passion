@@ -1,5 +1,5 @@
 <div class="modal header-modal-form" data-modal="buy-now">
-  <svg class="modal__cross js-modal-close">
+  <svg class="modal__cross header-modal-form__icon js-modal-close">
     <use href="./images/icons.svg#icon-close"></use>
   </svg>
   <form class="form" name="modal_form" autocomplete="on" method="post">
@@ -11,7 +11,14 @@
           <use xlink:href="./images/icons.svg#icon-person"></use>
         </svg>
       </label>
-      <input class="form__input" type="text" name="username" id="username" required />
+      <input
+        class="form__input"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="John Doe"
+        required
+      />
     </div>
     <div class="form__box">
       <label class="form__label" for="tel">
@@ -20,7 +27,15 @@
           <use xlink:href="./images/icons.svg#icon-phone"></use>
         </svg>
       </label>
-      <input class="form__input" type="tel" name="phone_number" id="tel" required />
+      <input
+        class="form__input"
+        type="tel"
+        name="phone_number"
+        id="tel"
+        placeholder="Format 333-333-333"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+        required
+      />
     </div>
     <div class="form__box">
       <label class="form__label" for="email">
@@ -29,7 +44,14 @@
           <use xlink:href="./images/icons.svg#icon-email"></use>
         </svg>
       </label>
-      <input class="form__input" type="email" name="email" id="email" required />
+      <input
+        class="form__input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@domain.com"
+        required
+      />
     </div>
     <div class="form__box">
       <label class="form__label" for="comment-area"><p class="form__text">Comment</p></label>
@@ -43,7 +65,7 @@
     </div>
     <div class="form__box form__box--secondary">
       <label class="form__label form__label--secondary" for="quantity"
-        ><p class="form__text form__text--font-titan">
+        ><p class="form__text form__text--font-bigger">
           Number of ice-cream (multiples of 5):
         </p></label
       >

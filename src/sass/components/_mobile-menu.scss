@@ -45,12 +45,21 @@
 .mobile-menu__btn {
   width: 209px;
   position: relative;
+  padding-right: 20px;
   margin-bottom: 19px;
   transition: background-color 250ms;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
 }
 
 .mobile-menu__icon {
   position: absolute;
   top: 18px;
-  right: 46px;
+  right: 44px;
+
+  @media screen and (min-width: 768px) {
+    right: 42px;
+  }
 }
