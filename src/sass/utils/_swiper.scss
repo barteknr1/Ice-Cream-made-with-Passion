@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .swiper-pagination-bullet {
@@ -16,13 +17,18 @@
   background-color: #d9d9d9;
   opacity: 1;
   &-active {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background-image: url(/images/home-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 13px 13px;
+    background-size: 12px 12px;
     background-color: transparent;
     border-radius: 0;
   }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
 }

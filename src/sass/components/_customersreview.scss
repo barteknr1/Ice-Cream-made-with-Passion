@@ -78,7 +78,7 @@
   }
   &__text {
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--font-14px);
     line-height: 1.86;
     margin-bottom: 45px;
   }
@@ -104,7 +104,7 @@
       line-height: 2.16;
     }
     &__text {
-      font-size: 14px;
+      font-size: var(--font-16px);
     }
     &__icon-quote {
       left: 125px;
