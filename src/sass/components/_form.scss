@@ -17,7 +17,7 @@
 }
 
 .form__icon {
-  fill: #e38299;
+  fill: var(--color-form-bg);
   position: absolute;
   top: 30px;
   left: 13px;
@@ -70,8 +70,8 @@
 
 .form__input {
   width: 100%;
-  background-color: var(--color-form-bg);
-  border: 1px solid #e38299;
+  background-color: var(--color-form-input);
+  border: 1px solid var(--color-form-bg);
   border-radius: 4px;
   outline: none;
   padding-block: 10px;
@@ -93,8 +93,8 @@
 
 .form__comment {
   width: 100%;
-  background-color: var(--color-form-bg);
-  border: 1px solid #e38299;
+  background-color: var(--color-form-input);
+  border: 1px solid var(--color-form-bg);
   border-radius: 4px;
   outline: none;
   resize: none;
