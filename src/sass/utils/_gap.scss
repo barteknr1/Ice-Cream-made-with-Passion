@@ -32,6 +32,7 @@
   }
 
   &--products {
+    gap: 130px;
     @media screen and (min-width: 1280px) {
       gap: 24px;
     }
