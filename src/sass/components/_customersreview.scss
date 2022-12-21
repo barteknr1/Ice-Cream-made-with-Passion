@@ -1,8 +1,39 @@
 .customers-review {
   &__img-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 15px;
+    margin-inline: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &--first {
+      background-image: url(/images/customer1-85w.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/images/customer1-170w.png);
+        background-size: 85px 85px;
+      }
+    }
+    &--second {
+      background-image: url(/images/customer2-85w.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/images/customer2-170w.png);
+        background-size: 85px 85px;
+      }
+    }
+    &--third {
+      background-image: url(/images/customer3-85w.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/images/customer3-170w.png);
+        background-size: 85px 85px;
+      }
+    }
   }
   &__first-box {
     background-color: #fafafa;
@@ -49,7 +80,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
   &__ikons {
     display: flex;

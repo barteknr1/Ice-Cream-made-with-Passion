@@ -1,4 +1,28 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  max-width: 926px;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  opacity: 1;
+  &-active {
+    width: 15px;
+    height: 15px;
+    background-image: url(/images/home-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 13px;
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
