@@ -30,7 +30,8 @@
       width: 34px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: #d41443;
     }
   }
