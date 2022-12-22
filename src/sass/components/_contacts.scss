@@ -13,18 +13,24 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 43px 20px;
-    // padding już jest odpowiedni
-    padding-bottom: 25px;
     width: 220px;
     height: 427px;
     margin: 0 auto;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
+    @media screen and (min-width: 768px) {
+      padding: 50px 30px;
+    }
+  }
+  &__label-background {
+    background-color: #f0d1a5;
+    width: 80px;
+    height: 16px;
   }
   &__label {
-    color: #ffffff;
-    background: #f0d1a5;
+    color: var(--color-white);
+    background-color: #f0d1a5;
     border-radius: 4px;
     border: none;
     padding: 0 25px;
