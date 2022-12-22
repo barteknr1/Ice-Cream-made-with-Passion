@@ -260,8 +260,11 @@
   background-color: var(--color-white);
   fill: var(--color-header);
   cursor: pointer;
+  transition: background 250ms ease-in-out;
 
-  &:active {
+  &:active,
+  &:hover,
+  &:focus {
     fill: var(--color-white);
     background-color: var(--color-header);
   }
