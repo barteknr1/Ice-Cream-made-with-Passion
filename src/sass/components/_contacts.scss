@@ -133,6 +133,10 @@
   padding-top: 54px;
   padding-bottom: 113px;
   gap: 10px;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    justify-content: center;
+  }
   &__item {
     width: 160px;
   }
