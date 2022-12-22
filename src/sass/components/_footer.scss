@@ -1,9 +1,7 @@
 .footer {
   background-color: var(--color-secondary-background);
-  padding-top: 110px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 165px;
   }
 
   &__wrapper {
