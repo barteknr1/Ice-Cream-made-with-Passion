@@ -1,6 +1,9 @@
 .background-contacts {
   background-image: linear-gradient(to top, #fff5f6 95%, #ffffff 95%);
   width: 100%;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+  }
 }
 
 .contacts {
@@ -8,10 +11,14 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 132px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
   @media screen and (min-width: 1280px) {
-    .contacts {
-      gap: 30px;
-    }
+    gap: 30px;
   }
 
   &__card {
@@ -27,6 +34,11 @@
     line-height: 1.83;
     @media screen and (min-width: 768px) {
       padding: 50px 30px;
+      width: 220px;
+      height: 554px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.64;
     }
     @media screen and (min-width: 1280) {
       width: 330px;
@@ -47,8 +59,18 @@
     border: none;
     padding: 0 25px;
     letter-spacing: 0.04em;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      width: 73px;
+      height: 28px;
+      padding: 0px;
+    }
+
     &--color {
       background-color: #c2e297;
+      @media screen and (min-width: 768px) {
+        width: 138px;
+      }
     }
   }
 
@@ -90,8 +112,27 @@
   padding-top: 54px;
   padding-bottom: 113px;
   gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 80px;
+    padding-bottom: 165px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 86px;
+  }
+
   &__item {
     width: 160px;
+    @media screen and (min-width: 768px) {
+      width: 190px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 200px;
+    }
   }
   &__svg {
     margin-left: 8px;
@@ -99,55 +140,6 @@
     height: 8px;
     &--color {
       --color6: white;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .background-contacts {
-    background-image: linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
-  }
-  .contacts {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-
-    &__card {
-      width: 220px;
-      height: 554px;
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.64;
-    }
-
-    &__label {
-      font-size: 16px;
-      width: 73px;
-      height: 28px;
-      padding: 0px;
-    }
-
-    &__label--color {
-      width: 138px;
-    }
-  }
-  .contacts-buttons {
-    flex-direction: row;
-    gap: 15px;
-    padding-top: 80px;
-    padding-bottom: 165px;
-    justify-content: center;
-    &__item {
-      width: 190px;
-      font-size: 14px;
-    }
-    @media screen and (min-width: 1280px) {
-      .contacts-buttons {
-        padding-top: 86px;
-        &__item {
-          width: 200px;
-        }
-      }
     }
   }
 }
