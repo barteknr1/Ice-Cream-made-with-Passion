@@ -1,14 +1,13 @@
 .form {
   padding-top: 15px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     padding-top: 30px;
   }
 }
 
 .form__header {
   color: var(--color-form-text);
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -23,9 +22,13 @@
 .form__icon {
   fill: var(--color-form-bg);
   position: absolute;
-  top: 30px;
+  top: 27px;
   left: 13px;
   transition: fill 250ms;
+
+  &--secondary {
+    top: 28px;
+  }
 }
 
 .form__box {
@@ -40,7 +43,16 @@
   &--secondary {
     display: inline-flex;
     align-items: flex-end;
+    padding-right: 28px;
     margin-bottom: 20px;
+  }
+
+  &--checkbox {
+    display: inline-block;
+
+    @media screen and (max-width: 509px) {
+      padding-left: 20px;
+    }
   }
 }
 
@@ -52,6 +64,7 @@
 
   &--secondary {
     width: 210px;
+    margin-left: 0;
   }
 }
 
@@ -62,7 +75,7 @@
   letter-spacing: 0.04em;
 
   &--secondary {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
     font-size: var(--font-12px);
     font-weight: 500;
   }
@@ -124,7 +137,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 }
 
 .form__btn-case__icon {
@@ -138,5 +151,4 @@
   position: relative;
   padding-right: 18px;
   background-color: var(--color-form-text);
-  transition: background-color 250ms;
 }
