@@ -50,6 +50,9 @@
       height: 572px;
       font-size: 16px;
       line-height: 1.81;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      padding-inline: 43px;
     }
   }
   &__label {
@@ -60,6 +63,7 @@
     border: none;
     padding: 0px 25px;
     letter-spacing: 0.04em;
+    text-align: center;
     @media screen and (min-width: 768px) {
       padding: 0px 32px;
       width: 73px;
@@ -98,6 +102,7 @@
     &:last-child {
       display: flex;
       flex-direction: column;
+      padding-bottom: 0;
     }
   }
   &__discription {
