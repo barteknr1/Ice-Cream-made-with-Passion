@@ -20,7 +20,12 @@
   @media screen and (min-width: 1280px) {
     gap: 30px;
   }
-
+  &__city {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 15px;
+    }
+  }
   &__card {
     background-color: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -35,7 +40,7 @@
     @media screen and (min-width: 768px) {
       padding: 50px 30px;
       width: 220px;
-      height: 554px;
+      height: 544px;
       margin: 0;
       font-size: 14px;
       line-height: 1.64;
@@ -46,9 +51,6 @@
       font-size: 16px;
       line-height: 1.81;
     }
-  }
-  &__label-background {
-    /*background-color: #f0d1a5;*/
   }
   &__label {
     color: var(--color-white);
