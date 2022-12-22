@@ -5,43 +5,45 @@
     <div class="about__position">
       <img
         class="about__img"
-        src="./images/mobile/about_cow_x1_280.png"
+        src="./images/mobile/about-cow-280.png"
         srcset="
-            ./images/mobile/about_cow_x2_560.png 2x 560w,
-            ./images/tablet/about_cow_x1_340.png    340w,
-            ./images/tablet/about_cow_x2_680.png 2x 680w,
-            ./images/desktop/about_cow_x1_516.png   516w,
-            ./images/desktop/about_cow_x2_1032.png 2x 1032w,
-            "
-        size="
+          ./images/mobile/about-cow-280.png    280w,
+          ./images/mobile/about-cow-560.png    560w,
+          ./images/tablet/about-cow-340.png    340w,
+          ./images/tablet/about-cow-680.png    680w,
+          ./images/desktop/about-cow-516.png   516w,
+          ./images/desktop/about-cow-1032.png 1032w
+        "
+        sizes="
     (max-width: 767px) 280px,
     ((max-width:767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 600px,
-    (min-width: 768px) and (max-width:1279px)) 340px,
+    ((min-width: 768px) and (max-width:1279px)) 340px,
     ((min-width:768px) and (max-width:1279px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 680px,
     (min-width: 1280px) 516px,
     ((min-width:1280px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 1032px,
     100vw"
         alt="krowa i dzbanek mleka"
       />
+      <div class="about__content-wrapper">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text about__text--part2">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
 
-      <p class="about__text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-      </p>
-      <p class="about__text about__text--part2">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt. <br />
-        <br />
-        Aliquam erat volutpat. Aenean accumsan.
-      </p>
-
-      <button class="button-about button button--bright" type="button">
-        Read more
-        <svg class="button-about__svg">
-          <use href="./images/icons.svg#icon-arrow-without-line"></use>
-        </svg>
-      </button>
+        <button class="button-about button button--bright" type="button">
+          Read more
+          <svg class="button-about__svg">
+            <use href="./images/icons.svg#icon-arrow-without-line"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
   <img
