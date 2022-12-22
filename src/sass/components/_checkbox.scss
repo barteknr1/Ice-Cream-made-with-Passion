@@ -19,6 +19,7 @@
 .checkbox__label {
   display: block;
   pointer-events: none;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 509px) {
     display: inline-block;
@@ -55,7 +56,6 @@
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-align: end;
-  margin-bottom: 20px;
 
   @media screen and (max-width: 509px) {
     text-align: center;

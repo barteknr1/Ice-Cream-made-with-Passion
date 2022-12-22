@@ -23,17 +23,19 @@
 // =====> classes .product are used in li <===== //
 .product {
   position: relative;
+
   max-width: 100%;
   @media screen and (max-width: 767px) {
     width: 370px;
   }
+
   @media screen and (min-width: 768px) {
     max-width: 220px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 335px;
   }
-  width: 100%;
+  
   justify-content: center;
   display: flex;
   flex-direction: column;

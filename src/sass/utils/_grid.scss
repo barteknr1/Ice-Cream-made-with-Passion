@@ -1,25 +1,26 @@
 .grid {
   display: flex;
   flex-direction: column;
-  margin: auto;
 
   &__products {
+    margin: auto;
     align-items: center;
     justify-content: space-between;
     gap: 130px;
   }
 
   &__about {
-    justify-content: flex-start;
+    justify-items: flex-start;
     align-items: flex-start;
     max-width: 230px;
     gap: 40px;
   }
 
   &__contacts {
+    margin: auto;
     align-items: center;
     justify-content: space-between;
-    max-width: 220px;
+    max-width: 384px;
     gap: 20px;
   }
 }
@@ -28,14 +29,13 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: auto;
 
     &__products {
       max-width: 700px;
       gap: 20px;
     }
     &__about {
-      max-width: 600px;
+      max-width: 660px;
       gap: 60px;
     }
     &__contacts {
