@@ -176,33 +176,34 @@
     flex-direction: row;
     justify-content: center;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    gap: 15px;
-    padding-top: 80px;
-    padding-bottom: 165px;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 86px;
-  }
-
-  &__item {
-    width: 160px;
     @media screen and (min-width: 768px) {
-      width: 190px;
-      font-size: 14px;
+      flex-direction: row;
+      gap: 15px;
+      padding-top: 80px;
+      padding-bottom: 165px;
+      justify-content: center;
     }
     @media screen and (min-width: 1280px) {
-      width: 200px;
+      padding-top: 86px;
     }
-  }
-  &__svg {
-    margin-left: 8px;
-    width: 8px;
-    height: 8px;
-    &--color {
-      --color6: white;
+
+    &__item {
+      width: 160px;
+      @media screen and (min-width: 768px) {
+        width: 190px;
+        font-size: 14px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 200px;
+      }
+    }
+    &__svg {
+      margin-left: 8px;
+      width: 8px;
+      height: 8px;
+      &--color {
+        --color6: white;
+      }
     }
   }
 }
