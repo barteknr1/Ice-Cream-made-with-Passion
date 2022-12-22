@@ -23,8 +23,11 @@
 // =====> classes .product are used in li <===== //
 .product {
   position: relative;
-  max-width: 280px;
-  width: 100%;
+
+  max-width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 220px;
@@ -43,7 +46,9 @@
     content: '';
     position: absolute;
     top: -120px;
-    left: 15px;
+
+    transform: translate(-50%, 0);
+    left: 50%;
     width: 249px;
     height: 252px;
     background-repeat: no-repeat;
@@ -52,8 +57,6 @@
   @media screen and (min-width: 768px) {
     &::after {
       top: -110px;
-      right: 0;
-      left: 0;
       width: 220px;
       height: 233px;
     }
@@ -189,7 +192,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-ice-cream);
-  width: 280px;
+  width: 100%;
   @media screen and (min-width: 768px) {
     width: 220px;
   }

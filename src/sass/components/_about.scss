@@ -128,10 +128,10 @@
     height: 100%;
     position: absolute;
     left: 0;
-    top: 638px;
+    top: 760px;
     object-fit: contain;
     object-position: top;
-    z-index: 2;
+    z-index: -1;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       display: none;
