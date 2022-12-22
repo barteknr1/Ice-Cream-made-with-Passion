@@ -90,6 +90,20 @@
 @media screen and (min-width: 768px) {
   .background-contacts {
     background-image: linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/desktop/contacts-background-1280.png'),
+        linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+      background-size: contain;
+      background-position-y: 67%;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+      screen and (min-resolution: 192dpi) and (min-width: 1280px),
+      screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+      background-image: url('../images/desktop/contacts-background-2560.png'),
+        linear-gradient(to top, #fff5f6 85%, #ffffff 85%);
+    }
   }
   .contacts {
     //
