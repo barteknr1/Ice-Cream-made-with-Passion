@@ -24,13 +24,15 @@
 .product {
   position: relative;
   max-width: 280px;
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     max-width: 220px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 335px;
   }
-  width: 100%;
+  
   justify-content: center;
   display: flex;
   flex-direction: column;
