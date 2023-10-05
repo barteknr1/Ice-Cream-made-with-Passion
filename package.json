@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "Ice-Cream-made-with-Passion",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://barteknr1.github.io/Projekt-grupowy",
+  "homepage": "https://github.com/barteknr1/Ice-Cream-made-with-Passion",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Projekt-grupowy/"
+    "build": "parcel build src/*.html --public-url /Ice-Cream-made-with-Passion/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
-    "sass": "^1.32.8"
+    "sass": "^1.68.0"
   }
 }

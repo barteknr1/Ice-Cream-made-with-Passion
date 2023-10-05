@@ -106,15 +106,11 @@
 .copyright {
   font-weight: 700;
   line-height: 1.5;
-  /* or 21px */
   padding-bottom: 25px;
   padding-top: 22px;
-
   color: #907e82;
-  width: 140px;
 
   @media screen and (min-width: 768px) {
-    width: 276px;
     letter-spacing: 0.02em;
   }
 }
